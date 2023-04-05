@@ -7,6 +7,8 @@ export const store = createStore({
         news: [],
         asks: [],
         jobs: [],
+        user: {},
+        item: {},
     },
     getters: {
         fetchedJobs(state) { // 2023-04-01 : 예제용 api 에러발생
@@ -17,6 +19,12 @@ export const store = createStore({
         },
         fetchedNews(state) {
             return state.news;
+        },
+        fetchedUser(state) {
+            return state.user;
+        },
+        fetchedItem(state) {
+            return state.item;
         },
     },
     mutations,

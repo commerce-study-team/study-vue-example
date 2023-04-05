@@ -23,13 +23,13 @@ const routes = [
         component: newsView,
     },
     {
-        path: '/item',
-        component: userView,
+        path: '/item/:id',
+        component: ItemView,
     },
     {
-        path: '/user',
-        component: ItemView,
-    }
+        path: '/user/:id',
+        component: userView,
+    },
 ];
 
 export const router = createRouter({
