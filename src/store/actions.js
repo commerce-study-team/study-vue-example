@@ -57,5 +57,14 @@ export default {
                 console.log(err);
             })
     },
+    FETCH_CHART(context) {
+        fetchAskList()
+            .then(res => {
+                context.commit('SET_CHART', res.data.map(rec => rec.points));
+            })
+            .catch(err => {
+                console.log(err);
+            });
+    },
 
 }

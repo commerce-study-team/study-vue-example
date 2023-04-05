@@ -4,6 +4,7 @@ import jobsView from "@/views/JobsView";
 import newsView from "@/views/NewsView";
 import userView from "@/views/UserView";
 import ItemView from "@/views/ItemView";
+import chartView from "@/views/ChartView";
 
 const routes = [
     {
@@ -30,6 +31,10 @@ const routes = [
         path: '/user/:id',
         component: userView,
     },
+    {
+        path: '/chart',
+        component: chartView,
+    }
 ];
 
 export const router = createRouter({
